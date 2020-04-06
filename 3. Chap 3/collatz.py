@@ -1,5 +1,8 @@
 def collatz(number):
-    return number // 2 if (number % 2) == 0 else number * 3 + 1
+    if (number % 2 ) == 0:
+        return number // 2
+    else:
+        return number * 3 + 1
 if __name__ == "__main__":
     print('Nhap so bat ky lon hon 1 vao:')
     try:
