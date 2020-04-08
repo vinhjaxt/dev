@@ -1,4 +1,6 @@
 import random
+import string
+
 h = 'H'
 t = 'T'
 count = 0
@@ -6,9 +8,10 @@ round = 0
 
 while round < 10000:
     set = []
+    choice =['up','ngua']
     for i in range(1, 101):
-        flip = random.randint(0,1)
-        if flip == 0:
+        flip = random.choice(choice)
+        if flip == 'ngua':
             set.append(h)
         else:
             set.append(t)
